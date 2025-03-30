@@ -47,3 +47,11 @@ const nameWithS = names.find(name => name.includes("S"));
 console.log("Finding 'S'" , nameWithS);
 
 
+//Creating Object Mapping:
+const nameProvince = names.reduce((acc, name, index)=>{
+  acc[name] = provinces[index];
+  return acc;
+},{});
+console.log("Finding 'S'" , nameProvince);
+
+

@@ -32,3 +32,8 @@ const nameLengths = names.map(name => name.length);
 console.log("Name Lengths: " ,nameLengths);
 
 
+//Sorting:
+const sortedProvinces = [...provinces].sort();
+console.log("Sorting", sortedProvinces);
+
+

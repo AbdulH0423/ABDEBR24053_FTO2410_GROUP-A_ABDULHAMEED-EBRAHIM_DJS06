@@ -55,3 +55,8 @@ const nameProvince = names.reduce((acc, name, index)=>{
 console.log("Finding 'S'" , nameProvince);
 
 
+//Advanced Exercies:
+//Log Products:
+console.log(products.forEach(product =>console.log(product.product)));
+
+

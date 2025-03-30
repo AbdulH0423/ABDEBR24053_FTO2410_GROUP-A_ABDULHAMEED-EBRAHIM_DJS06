@@ -12,7 +12,7 @@ const products = [
   { product: 'avocado', price: "8" },
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
-]]
+]
 
 //forEach basics:
 names.forEach(name => console.log(name));
@@ -79,3 +79,10 @@ const lowestPrice = Math.min(...prices.map(product => product.price));
 console.log(`Highest: ${highestPrice}. Lowest: ${lowestPrice}`);
 
 
+// Object Transformation: 
+console.log(Object.entries(products).reduce((acc,[index,product])=>{
+  acc[index] = {name:product.product, cost:product.price};
+
+  return acc;
+
+},{}));

@@ -67,3 +67,7 @@ console.log(products.filter(product=> product.product.length <= 5));
 console.log(products.filter(product => product.price && product.price.toString().trim() !== "")
 .map(product => ({...product, price:Number(product.price)})).reduce((total, product) => total + product.price, 0));
 
+//Concatenate Product Names:
+console.log(products.reduce((acc,product)=> acc + product.product, ""));
+
+

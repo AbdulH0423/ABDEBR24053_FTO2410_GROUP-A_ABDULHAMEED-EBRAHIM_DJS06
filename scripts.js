@@ -42,3 +42,8 @@ const filteredProvincesByCape = provinces.filter(province => !province.includes(
 console.log("Filtering Cape", filteredProvincesByCape.length);
 
 
+//Finding 'S': 
+const nameWithS = names.find(name => name.includes("S"));
+console.log("Finding 'S'" , nameWithS);
+
+

@@ -63,3 +63,7 @@ console.log(products.forEach(product =>console.log(product.product)));
 //Filter by name length:
 console.log(products.filter(product=> product.product.length <= 5));
 
+//Price Manipulation:
+console.log(products.filter(product => product.price && product.price.toString().trim() !== "")
+.map(product => ({...product, price:Number(product.price)})).reduce((total, product) => total + product.price, 0));
+

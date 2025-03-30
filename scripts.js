@@ -71,3 +71,11 @@ console.log(products.filter(product => product.price && product.price.toString()
 console.log(products.reduce((acc,product)=> acc + product.product, ""));
 
 
+//Find Extremes in Prices:
+const prices = products.filter(product=> product.price && product.price.toString().trim() !=="")
+.map(product => ({...product, price:Number(product.price)}));
+const highestPrice = Math.max(...prices.map(product =>product.price));
+const lowestPrice = Math.min(...prices.map(product => product.price));
+console.log(`Highest: ${highestPrice}. Lowest: ${lowestPrice}`);
+
+

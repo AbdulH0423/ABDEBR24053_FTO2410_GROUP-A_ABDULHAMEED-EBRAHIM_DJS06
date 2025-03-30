@@ -37,3 +37,8 @@ const sortedProvinces = [...provinces].sort();
 console.log("Sorting", sortedProvinces);
 
 
+//Filtering Cape:
+const filteredProvincesByCape = provinces.filter(province => !province.includes("Cape"));
+console.log("Filtering Cape", filteredProvincesByCape.length);
+
+

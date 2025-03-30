@@ -27,3 +27,8 @@ const upperCaseProvinces = provinces.map(province => province.toUpperCase());
 console.log("Uppercase Transformation " ,upperCaseProvinces);
 
 
+//Name Lengths:
+const nameLengths = names.map(name => name.length);
+console.log("Name Lengths: " ,nameLengths);
+
+

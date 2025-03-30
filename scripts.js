@@ -60,3 +60,6 @@ console.log("Finding 'S'" , nameProvince);
 console.log(products.forEach(product =>console.log(product.product)));
 
 
+//Filter by name length:
+console.log(products.filter(product=> product.product.length <= 5));
+
